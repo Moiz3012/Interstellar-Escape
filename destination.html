@@ -12,25 +12,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" href="assets/space1.png">
         <style>
-            @media only screen and (min-width: 375px){
+            @media only screen and (max-width: 375px){
                 body {
-                    background: url("/assets/destination/background-destination-mobile.jpg");
+                    background: url("background-destination-mobile.jpg");
                     background-size:cover;
+                    height: 100vh;
+                }
+            }
+            @media only screen and (min-width: 376px) and (max-width: 767px){
+                body {
+                    background: url("background-destination-tablet.jpg");
+                    background-size: cover;
                     height: 100vh;
                 }
             }
             @media only screen and (min-width: 768px){
                 body {
-                    background: url("/assets/destination/background-destination-tablet.jpg");
-                    background-size: cover;
-                    height: 100vh;
-                }
-            }
-            @media only screen and (min-width: 1280px){
-                body {
-                    background: url("/assets/destination/background-destination-desktop.jpg");
+                    background: url("background-destination-desktop.jpg");
                     background-size: cover;
                     height: 100vh;
                 }

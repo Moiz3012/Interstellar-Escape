@@ -20,23 +20,28 @@
     />
     <link rel="icon" type="image/png" href="assets/space1.png" />
     <style>
-      @media only screen and (min-width: 375px) {
+      /* For screens up to 375px (mobile) */
+      @media only screen and (max-width: 375px) {
         body {
-          background: url("/assets/home/background-home-mobile.jpg");
+          background: url("background-home-mobile.jpg");
           background-size: cover;
           height: 100vh;
         }
       }
+
+      /* For screens from 376px to 767px (tablet) */
+      @media only screen and (min-width: 376px) and (max-width: 767px) {
+        body {
+          background: url("background-home-tablet.jpg");
+          background-size: cover;
+          height: 100vh;
+        }
+      }
+
+      /* For screens from 768px and above (desktop) */
       @media only screen and (min-width: 768px) {
         body {
-          background: url("/assets/home/background-home-tablet.jpg");
-          background-size: cover;
-          height: 100vh;
-        }
-      }
-      @media only screen and (min-width: 1280px) {
-        body {
-          background: url("/assets/home/background-home-desktop.jpg");
+          background: url("background-home-desktop.jpg");
           background-size: cover;
           height: 100vh;
         }
